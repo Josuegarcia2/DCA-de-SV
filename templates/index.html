@@ -34,9 +34,20 @@
             </p>
 
             <div class="button-group">
-                <button class="btn btn-orange" type="button" onclick="continuarAnonimo()">Continuar de forma anónima</button>
-                <button class="btn btn-dark" type="button" onclick="continuarCorreo()">Continuar con correo electrónico</button>
-            </div>
+               <a href="#" 
+                onclick="continuarAnonimo(); return false;" 
+             class="btn btn-orange" 
+              style="display: block; text-align: center; text-decoration: none; line-height: normal;">
+              Continuar de forma anónima
+              </a>
+
+             <a href="#" 
+               onclick="continuarCorreo(); return false;" 
+                class="btn btn-dark" 
+                style="display: block; text-align: center; text-decoration: none; line-height: normal;">
+                Continuar con correo electrónico
+             </a>
+          </div>
         </div>
 
         <!-- Footer con Checkbox y Términos -->
@@ -53,6 +64,6 @@
     </main>
 
     <!-- Script JS vinculado dinámicamente -->
-    <script src="{{ url_for('static', filename='../js/main.js') }}"></script>
+  <script src="{{ url_for('serve_js', filename='main.js') }}?v=2"></script>
 </body>
 </html>

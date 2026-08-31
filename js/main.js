@@ -9,14 +9,14 @@ function verificarTerminos() {
 
 function continuarAnonimo() {
     if (verificarTerminos()) {
-        // Redirección a la vista de reporte anónimo (si la tienes creada)
-        console.log("Continuando de forma anónima...");
+        // Redirección añadida a la vista de reporte anónimo
+        window.location.href = '/denuncia';
     }
 }
 
 function continuarCorreo() {
     if (verificarTerminos()) {
-        // Redirige a la pantalla de login que acabamos de programar
+        // Redirige a la pantalla de login
         window.location.href = '/login';
     }
 }
